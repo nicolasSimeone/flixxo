@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flixxo</string>
+    <string name="flixxocoin">flixxoCoin</string>
+    <string name="earn">GANA</string>
+    <string name="flixs">2.40</string>
+    <string name="home">Inicio</string>
+    <string name="search">Búsqueda</string>
+    <string name="setting">Configuración</string>
+    <string name="all">TODOS</string>
+    <string name="videos">VIDEOS</string>
+    <string name="email_address_login">eMail</string>
+    <string name="password_login">Ingresá tu contraseña</string>
+    <string name="email_address">eMail</string>
+    <string name="password">Contraseña</string>
+    <string name="login">INICIAR SESIÓN</string>
+    <string name="login_empty_fields_error">Email y contraseña son requeridos</string>
+    <string name="series">SERIES</string>
+    <string name="community">COMUNIDAD</string>
+    <string name="detailimage">detailImage</string>
+    <string name="playbutton">playButton</string>
+    <string name="search_view">Buscar</string>
+    <string name="image_home">image_home</string>
+    <string name="log_out">CERRAR SESIÓN</string>
+    <string name="forgot_password">
+        <u>¿Olvidaste tu Contraseña?</u>
+    </string>
+    <string name="don_t_have_an_account_get_started">¿No tenés cuenta?</string>
+    <string name="submit">ENVIAR</string>
+    <string name="email">eMail</string>
+    <string name="back_to_login">
+        <u>Volver a Iniciar Sesión</u>
+    </string>
+    <string name="reset_password">
+        ¿Olvidaste tu contraseña?
+        Ingresá tu cuenta de email y te enviaremos las instrucciones para
+        resetear tu contraseña
+    </string>
+    <string name="enter_your_code">Ingresá tu código</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="reset_password_email">RESETEAR CONTRASEÑA</string>
+    <string name="take_me_to_login_token">
+        <u>Llevame a Iniciar Sesión</u>
+    </string>
+    <string name="already_have_an_account_token">¿Ya tenés una cuenta?</string>
+    <string name="sign_up">Registrarme</string>
+    <string name="nickname">Nickname</string>
+    <string name="confirm_pass">Confirmar Contraseña</string>
+    <string name="not_registered">¿No tenés una cuenta?
+        <b>Empezá</b>
+    </string>
+    <string name="get_started">
+        <b>
+            <u>Empezá</u>
+        </b>
+    </string>
+    <string name="get_started_register">
+        <b>
+            EMPEZÁ
+        </b>
+    </string>
+    <string name="have_account">¿Ya tenés una cuenta? Llevame a Iniciar Sesión</string>
+    <string name="flixxocoin_search">flixxocoin_busqueda</string>
+    <string name="terms">Clickeando \"Registrar\" Acepto
+        <b>
+            <u>términos de servicio y seguridad de Flixxo</u>
+        </b>
+    </string>
+    <string name="takeToLogin">¿Ya tenés una cuenta?
+        <b>
+            <u>Llevame a Iniciar Sesión</u>
+        </b>
+    </string>
+    <string name="match_passwords">Contraseña no es igual a Confirmar Contraseña.</string>
+    <string name="invalid_email">eMail inválido.</string>
+    <string name="invalid_nickname">Tu nickname debe tener entre 3 y 16 caracteres.</string>
+    <string name="invalid_pass">Debe contener al menos 1 número, 1 mayúscula y 1 carácter especial</string>
+
+    <string name="get_more_flixx">OBTENÉ MÁS FLIXX</string>
+    <string name="short_ads">MIRANDO UN VIDEO SPONSOREADO</string>
+    <string name="earn_flixx_ads">Gana %1$s FLIXX</string>
+    <string name="stream_search">¿Qué querés ver ahora?</string>
+    <string name="subtitle_search">Buscá por usuarios, nombre de video y más</string>
+    <string name="no_results_found">No se encuentran resultados</string>
+    <string name="name_user">Nombre</string>
+    <string name="language">Lenguaje</string>
+    <string name="country_of_residence">País de residencia</string>
+    <string name="gender">Sexo</string>
+    <string name="date_of_birth">Fecha de nacimiento</string>
+    <string name="we_want_to_learn_more_from_you">¡Queremos aprender más de vos!</string>
+    <string name="welcome">Bienvenid@</string>
+    <string name="continue_onBoard">CONTINUAR</string>
+    <string name="mm">MM</string>
+    <string name="dd">DD</string>
+    <string name="skip">SALTAR</string>
+    <string name="follow_at_least_5_categories">Elegí al menos 5 categorias.</string>
+    <string name="don_t_have_any_tokens_yet">¿Todavía no tenés créditos?</string>
+    <string name="get_you_first_tokens_with_our_video">Conseguí tus primeros FLIXX mirando este video.</string>
+    <string name="rock_on">¡Genial!</string>
+    <string name="you_ve_just_earned_1_09_flixx">Acabás de ganar 1.09 FLIXX</string>
+    <string name="which_categories">¿Qué categorías te gustaría ver?</string>
+    <string name="dont_s_worry_you_can_earn_flixx_by_watching_ads">¡No te preocupes! Podés ganar FLIXX mirando publicidades.
+    </string>
+    <string name="take_me_to_wonderland">¡Mostrame la magia!</string>
+    <string name="information">INFORMACIÓN</string>
+    <string name="episodes">EPISODIOS</string>
+    <string name="contact">CONTACTO</string>
+    <string name="terms_of_service">TÉRMINOS DE SERVICIO</string>
+    <string name="privace_policy">POLÍTICA DE PRIVACIDAD</string>
+    <string name="you_currently_have">EN ESTE MOMENTO TENÉS</string>
+    <string name="following">SIGUIENDO</string>
+    <string name="followers">TE SIGUEN</string>
+    <string name="account">CUENTA</string>
+    <string name="edit_profile">EDITAR PERFIL</string>
+    <string name="deposit">DEPÓSITO</string>
+    <string name="withdrawal">RETIRO</string>
+    <string name="buy">COMPRAR</string>
+    <string name="you_are_almost_there">¡Ya estas casi ahi!</string>
+    <string name="sent_message_to">¡Por favor revisá tu  teléfono! Te enviamos un mensaje a %1$s con un código de verificación.</string>
+    <string name="copy_paste">¡Vamos! Abrilo y pegalo acá.</string>
+    <string name="digit_code">Por favor, ingresá tu código de verificación</string>
+    <string name="resend_code">REENVIAR CÓDIGO</string>
+    <string name="temporarily_disabled">Retiros están deshabilitados temporalmente</string>
+    <string name="attention">¡ATENCIÓN!</string>
+    <string name="debit_card">TARJETA DE DÉBITO</string>
+    <string name="you_will_have">Tu tendras tu propia tarjeta de credito para gastar identificadores en cualquier lado como si fueran dinero.
+    </string>
+    <string name="warning_info">Función experimental. No deposites montos altos que no puedas perder. Los retiros están
+        deshabilitados temporalmente. Los depósitos se acreditan habitualmente después de 10 confirmaciones en la blockchain de Ethereum. Sólo enviá FLIXX a tu dirección de deposito.
+    </string>
+    <string name="warning">¡ALERTA!</string>
+    <string name="address">DIRECCIÓN</string>
+    <string name="use_this_address">Usá esta dirección para transferir FLIXX desde una billetera externa.</string>
+    <string name="copy">COPIAR</string>
+    <string name="email_account">DIRECCIÓN DE EMAIL</string>
+    <string name="info_account">Usalo para iniciar sesión y recibir noticias &amp; notificaciones.</string>
+    <string name="reset_pass">RESETEAR CONTRASEÑA</string>
+    <string name="enter_your_flixxo">Ingresá tu contraseña Flixxo.</string>
+    <string name="current_password">Contraseña actual</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="continue_without_watching">CONTINUAR SIN MIRAR</string>
+    <string name="enter_your_info">Ingresá tu información y agregá una imagen de perfil opcional.</string>
+    <string name="change_photo">CAMBIAR FOTO</string>
+    <string name="following_button">Siguiendo</string>
+    <string name="follow_button">Seguir</string>
+    <string name="qr_title">ESCANEAR CODIGO QR </string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="earnFlixx">GANÁ FLIXX</string>
+    <string name="no_internet_connection">No hay conexión a internet!</string>
+    <string name="seems_like_you">Parece que estas desconectado, por favor chequeá tu conexión</string>
+    <string name="try_again">PROBÁ DE NUEVO</string>
+    <string name="are_you_sure">¿Estás seguro que querés salir?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading_torrent">Cargando...</string>
+    <string name="connecting_torrent">Conectando...</string>
+    <string name="enter_your_birthdate">Ingresá tu fecha de cumpleaños</string>
+    <string name="title_activity_sms">SmsActivity</string>
+    <string name="flixxo_two_step_authentication">Flixxo Two-Step Authentication</string>
+    <string name="enter_your_phone">Ingresá tu número de teléfono para recibir un mensaje con el código de verificación</string>
+    <string name="please_enter_phone">Ingresá tu número de teléfono</string>
+    <string name="invalid_phone">Tu número es inválido</string>
+    <string name="updated_code">Código Nuevo</string>
+    <string name="code_area">+%1$s</string>
+
+    <string name="changePasswordSuccessfully">Cambio de contraseña exitoso</string>
+    <string name="adPlayerScreen">ad_player_screen</string>
+    <string name="adFinished">ad_finished</string>
+    <string name="adCancelled">ad_cancelled</string>
+    <string name="updatedCode">Código Nuevo</string>
+    <string name="advertisingPlay">Advertising play</string>
+    <string name="willEarnFlix">Por este video vas a ganar %1$s FLIXX.</string>
+    <string name="playVideo">Reproducir</string>
+    <string name="cancelLower">Cancelar</string>
+    <string name="oops">Oops! No tenés suficiente crédito para mirar este contenido.</string>
+    <string name="tokenCopied">Token copiado al portapapeles</string>
+    <string name="paymentFailed">Fallo en el pago</string>
+    <string name="permisionRecordDenied">Permiso para grabar denegado</string>
+    <string name="permissionDeniedByUser">Permiso denegado por el usuario</string>
+    <string name="permissionGrantedByUser">Permiso aprobado por el usuario</string>
+    <string name="incorrectName">Nombre incorrecto</string>
+    <string name="incorrectCountry">País incorrecto</string>
+    <string name="invalidYear">Año inválido</string>
+    <string name="invalidDay">Dia inválido</string>
+    <string name="invalidMonth">Mes inválido</string>
+    <string name="changedSuccesfully">Cambio exitoso</string>
+    <string name="changeProfilePhoto">Cambiar foto de perfil</string>
+    <string name="chooseFromLibrary">Elegir desde la galería</string>
+    <string name="removePhoto">Borrar foto</string>
+    <string name="takePhoto">Sacar foto</string>
+    <string name="invalidEmail">Email inválido</string>
+    <string name="invalidUsername">Nombre de usuario inválido</string>
+    <string name="invalidPassword">Contraseña inválida</string>
+    <string name="userBanned">Usuario prohibido</string>
+    <string name="incorrectLanguage">Lenguaje incorrecto</string>
+    <string name="areyousureCaps">¿ESTÁS SEGURO?</string>
+    <string name="logoutLower">Cerrar sesión</string>
+    <string name="incorrectCode">Código incorrecto</string>
+    <string name="passwordMismatch">Contraseña no es igual que la contraseña de confirmación</string>
+    <string name="profile">PERFIL</string>
+    <string name="follow">SEGUIDORES</string>
+    <string name="delete_cache">BORRAR CACHÉ</string>
+    <string name="delete">BORRAR</string>
+    <string name="watchNow">VER AHORA</string>
+    <string name="watchNext">VER PRÓXIMO EPISODIO T%1$s:E%2$s</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="other">Otro</string>
+    <string name="earnflixxads">¡Podés ganar FLIXX mirando publicidades!</string>
+    <string name="get">Obtener</string>
+    <string name="withourvideo">con nuestro video.</string>
+    <string name="detailPrice">PAGÁ %1$s FLIXX PARA VER</string>
+    <string name="not_so_short">NO TAN CORTO</string>
+    <string name="short_text">CORTO</string>
+    <string name="very_short">MUY CORTO</string>
+    <string name="back_sms">VOLVER</string>
+    <string name="versionNumber">Version: 0.%1$s</string>
+    <string name="unexpected_error">Error inesperado</string>
+    <string name="login_unsuccess">Login unsuccess</string>
+    <string name="bad_credentials">Usuario o contraseña incorrectos</string>
+    <string name="not_able_login">El usuario no está habilitado para loguearse</string>
+    <string name="blocked_login">El usuario está bloqueado. Cambiar la contraseña</string>
+    <string name="email_already_registered">Email/nickname ya registrado</string>
+    <string name="forgot_code_failed">Falló el envío para el cambio de contraseña</string>
+    <string name="password_updating_problem">Error al cambiar la contraseña</string>
+    <string name="invalid_payload">Constraseña actual incorrecta</string>
+    <string name="name_too_long">El nombre es muy largo</string>
+    <string name="error_saving_profile">Error al guardar el perfil</string>
+    <string name="error_user_status">Error al consultar el status del perfil</string>
+    <string name="error_get_followers">Error al obtener los seguidores</string>
+    <string name="error_user_keys">Error al obtener las keys de usuario</string>
+    <string name="error_get_followings">Error al obtener los seguidos</string>
+    <string name="error_get_token">Error al obtener el token</string>
+    <string name="error_get_language">Error al obtener idioma</string>
+    <string name="error_change_photo">Error al cambiar la foto</string>
+    <string name="user_validation_problem">Problemas de validación de usuario</string>
+    <string name="unauthorized">No autorizado</string>
+    <string name="forbidden">Prohibido</string>
+    <string name="not_found">No encontrado</string>
+    <string name="error_follow_user">Error al seguir al usuario</string>
+    <string name="error_unfollow_user">Error al dejar de seguir al usuario</string>
+    <string name="find_account_email">No podemos encontrar una cuenta con este email. Intenta nuevamente o crea una nueva cuenta </string>
+    <string name="error_balance">Error al obtener saldo</string>
+    <string name="error_client_key">Error al obtener client key</string>
+    <string name="disabled_code">Código inhabilitado</string>
+    <string name="invalid_code">Código incorrecto</string>
+    <string name="confirmation_failed">Falló la confirmación</string>
+    <string name="error_country">Error al obtener país</string>
+    <string name="error_content">Error al obtener el contenido</string>
+    <string name="error_content_detail">Error al obtener el detalle del contenido</string>
+    <string name="nick_name_user">Nickname esta en uso</string>
+    <string name="email_registered">Email ya esta registrado</string>
+    <string name="skipNoTokens">Como salteaste la publicidad, no ganaste Flixx!</string>
+    <string name="soSad">¡Que lastima!</string>
+    <string name="youEarned">Por ver la publicidad ganaste %1$s Flixx</string>
+    <string name="validationCurrentPassEmpty">El campo Contraseña actual no puede estar vacio</string>
+    <string name="check_your_email">Revisa tu email! </string>
+    <string name="notEnoughSpace">No hay espacio suficiente en el dispositivo.</string>
+    <string name="goConfigurationMessage"> Ir a Configuración y Borrar Cache.</string>
+    <string name="goConfiguration">IR A CONFIGURACION</string>
+    <string name="outOfTokens">¿Te quedaste sin creditos?</string>
+    <string name="tryAgainMinutes">Por favor, intenta de nuevo en %1$s minutos</string>
+    <string name="tryAgainMinute">Por favor, intenta de nuevo en %1$s minute</string>
+    <string name="try_again_0_minutes">Por favor, intenta de nuevo en menos de un minuto</string>
+    <string name="seasonTitle">TEMPORADA %1$s</string>
+    <string name="byAuthor">by %1$s</string>
+    <string name="submitProfile">GUARDAR CAMBIOS</string>
+    <string name="body_null">Error</string>
+    <string name="start_again">¿EMPEZAR DE NUEVO?</string>
+    <string name="play_now">JUGAR AHORA</string>
+    <string name="price_altesc">PAGA %1$s FLIXX PARA JUGAR</string>
+    <string name="interactive">INTERACTIVA</string>
+    <string name="restart">REINICIAR</string>
+    <string name="incorrect_birthdate">Fecha de nacimiento incorrecta</string>
+    <string name="sure_start_again">¿Estás seguro de empezar de nuevo?</string>
+</resources>

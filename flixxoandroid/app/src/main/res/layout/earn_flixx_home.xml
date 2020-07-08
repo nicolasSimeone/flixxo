@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:background="@drawable/earn_ad"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/linear_text"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+    >
+        <TextView
+                android:id="@+id/get_more_flixx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/get_more_flixx"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:layout_marginStart="25dp"
+        />
+
+        <TextView
+                android:id="@+id/short_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/short_ads"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginStart="25dp"
+        />
+
+    </LinearLayout>
+
+
+    <Button
+            android:id="@+id/earn_flixx_button"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linear_text"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="12dp"
+            android:elevation="5dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/earn_flixx_ads"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+</RelativeLayout>

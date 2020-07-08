@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/darkTwo">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/dark"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+        <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_toStartOf="@+id/clean_search"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/search_view"
+                android:paddingStart="10dp"
+                android:paddingEnd="15dp"
+                android:textColorHint="@color/placeholder"
+                android:background="@drawable/edit_text_background"
+                android:backgroundTint="@color/darkThree"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:focusable="true"
+                android:inputType="text"
+                android:fontFamily="@font/montserrat_regular"
+                android:imeOptions="actionSearch"
+                android:textColor="@android:color/white"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginEnd="10dp"
+                  android:layout_alignParentEnd="true"
+                  android:text="CANCEL"
+                  android:fontFamily="@font/montserrat_semibold"
+                  android:id="@+id/clean_search"
+                  android:visibility="gone"
+                  android:textColor="@android:color/white"
+                  android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/before_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+        <ImageView android:id="@+id/lens_image"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_search_big"
+                   android:layout_gravity="center_horizontal"
+                   android:paddingBottom="10dp"
+                   android:scaleType="center"/>
+
+        <TextView android:id="@+id/stream_search"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/stream_search"
+                  android:fontFamily="@font/montserrat_semibold"
+                  android:textColor="@android:color/white"
+                  android:textSize="20sp"
+                  android:gravity="center"
+                  android:maxLines="1"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="50dp"
+                  android:paddingTop="5dp"
+                  android:text="@string/subtitle_search"
+                  android:fontFamily="@font/montserrat_regular"
+                  android:gravity="center"
+                  android:textSize="12sp"
+                  android:textColor="@color/textNavigation"
+                  android:maxLines="1"
+                  android:id="@+id/subtitle_search"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/not_found_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/not_found_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_results_found"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:maxLines="1"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

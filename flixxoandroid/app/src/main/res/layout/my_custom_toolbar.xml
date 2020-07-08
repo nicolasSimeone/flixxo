@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="55dp"
+              android:orientation="horizontal"
+              android:background="@color/dark"
+              android:weightSum="100">
+
+    <ImageButton android:layout_width="wrap_content"
+                 android:layout_height="55dp"
+                 android:layout_marginBottom="5dp"
+                 android:layout_marginStart="1dp"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="5dp"
+                 android:id="@+id/back_button"
+                 android:layout_weight="10"
+                 android:background="@color/dark"
+                 android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:gravity="end|center_vertical"
+                  android:layout_weight="90">
+
+        <ImageView android:layout_width="48dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/flixxocoin"
+                   android:src="@drawable/flixxo_image_banner"
+                   android:layout_gravity="center"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginTop="5dp"
+                   android:padding="10dp"
+                   android:contentDescription="@string/flixxocoin"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_marginEnd="10dp"
+                  android:layout_marginStart="3dp"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/montserrat_semibold"
+                  android:id="@+id/balance_amount_detail"
+                  android:textColor="@android:color/white"
+                  android:textSize="14sp"/>
+
+        <Button
+                android:id="@+id/earnButton_custom"
+                android:textSize="9dp"
+                android:layout_width="84dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_height="24dp"
+                android:fontFamily="@font/montserrat_semibold"
+                style="@style/button_purple"
+                android:text="@string/earnFlixx"/>
+
+    </LinearLayout>
+
+</LinearLayout>

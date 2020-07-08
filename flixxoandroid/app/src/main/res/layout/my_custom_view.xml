@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="55dp"
+              android:orientation="horizontal"
+              android:background="@color/dark"
+              android:weightSum="100">
+
+    <ImageView android:layout_width="1dp"
+               android:layout_height="45dp"
+               android:id="@+id/title"
+               android:layout_marginStart="10dp"
+               android:layout_gravity="center"
+               android:layout_weight="35"
+               android:src="@mipmap/ic_flixxologo"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:gravity="end|center_vertical"
+                  android:layout_weight="65">
+
+        <ImageView android:layout_width="48dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/flixxocoin"
+                   android:src="@drawable/flixxo_image_banner"
+                   android:padding="10dp"
+                   android:layout_gravity="center"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginTop="5dp"
+                   android:contentDescription="@string/flixxocoin"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_marginEnd="10dp"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:id="@+id/balance_amount"
+                  android:fontFamily="@font/montserrat_semibold"
+                  android:textColor="@android:color/white"
+                  android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/earnButton"
+                android:textSize="9sp"
+                android:layout_width="84dp"
+                android:layout_marginEnd="10dp"
+                style="@style/button_purple"
+                android:gravity="center"
+                android:layout_height="24dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/earnFlixx"/>
+
+    </LinearLayout>
+
+</LinearLayout>

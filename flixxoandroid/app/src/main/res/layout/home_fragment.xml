@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabsNav"
+            android:backgroundTint="@color/backgroundTabs"
+            android:layout_width="match_parent"
+            app:tabIndicatorColor="@color/flixxoYellow"
+            app:tabTextColor="@color/textColorTabs"
+            app:tabTextAppearance="@style/tab_text"
+            app:tabSelectedTextColor="@android:color/white"
+            android:background="@color/backgroundTabs"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:layout_height="36dp"
+            app:tabIndicatorFullWidth="false">
+
+        <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabSerie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/series"
+                android:fontFamily="@font/montserrat_bold"/>
+
+        <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabCommunity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/community"
+                android:fontFamily="@font/montserrat_bold"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+                                           android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:descendantFocusability="blocksDescendants"
+                      android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/layout_carousel_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:background="@color/dark">
+
+                <com.synnapps.carouselview.CarouselView
+                        android:id="@+id/customCarouselView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:fillColor="#FFFFFFFF"
+                        app:pageColor="#00000000"
+                        app:pageTransformInterval="500"
+                        app:slideInterval="7000"
+                        app:pageTransformer="slide_over"
+                        app:radius="6dp"
+                        app:strokeColor="#FF777777"
+                        app:strokeWidth="1dp"/>
+
+                <ProgressBar
+                        android:id="@+id/progress_bar_loading"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_media"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

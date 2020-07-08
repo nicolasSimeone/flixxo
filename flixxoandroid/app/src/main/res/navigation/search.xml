@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/searchFragment"
+            android:id="@+id/search">
+
+    <argument android:name="showToolbar" app:argType="boolean" android:defaultValue="false"/>
+
+    <fragment
+            android:id="@+id/searchFragment"
+            android:label="@string/search"
+            android:name="com.flixxo.apps.flixxoapp.view.SearchFragment"
+            tools:layout="@layout/search_fragment"/>
+
+</navigation>

@@ -1,0 +1,148 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+
+  desc "Run debug build"
+  lane :build do
+    gradle(task: 'assemble', build_type: 'Debug')
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Submit a new Beta Build to Crashlytics Beta"
+  lane :beta do
+    gradle(task: "clean assembleRelease")
+    crashlytics
+  
+    # sh "your_script.sh"
+    # You can also use other beta testing services here
+  end
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    gradle(task: "clean assembleRelease")
+    upload_to_play_store
+  end
+
+  desc "Deploy a new version to the AppCenter"
+  lane :deploy_appcenter do
+
+    ##run git status clean if not executing lane in CI
+    ensure_git_status_clean  if !is_ci?
+
+    appcenter_api_token = ENV['APPCENTER_API_TOKEN_TEST']
+    
+    raise "You must specify a APPCENTER_API_TOKEN_TEST environment variable to deploy." if appcenter_api_token.nil?
+
+    if !is_ci?
+      gradle(task: "incrementVersionCode", project_dir: './')
+    end 
+    
+    gradle(task: 'assemble', build_type: 'Debug')
+
+    if !is_ci?
+      git_commit(path: ['./gradle.properties'], message: 'Bump versionCode')
+      push_to_git_remote
+    end
+
+    apk_path = Actions.lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH] 
+    puts apk_path
+
+    appcenter_upload(
+      api_token: appcenter_api_token,
+      owner_name: "Flixxo",
+      app_name: "Flixxo-android",
+      apk: Actions.lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH] 
+    )
+  end
+
+  desc "Deploy a new staging version to the AppCenter"
+  lane :deploy_stg_appcenter do
+
+    ##run git status clean if not executing lane in CI
+    ensure_git_status_clean  if !is_ci?
+
+    appcenter_api_token = ENV['APPCENTER_API_TOKEN_TEST']
+    
+    raise "You must specify a APPCENTER_API_TOKEN_TEST environment variable to deploy." if appcenter_api_token.nil?
+
+    if !is_ci?
+      gradle(task: "incrementVersionCode", project_dir: './')
+    end 
+
+    gradle(task: 'assemble', build_type: 'Staging')
+
+    if !is_ci?
+      git_commit(path: ['./gradle.properties'], message: 'Bump versionCode')
+      push_to_git_remote
+    end
+    
+    apk_path = Actions.lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH] 
+    puts apk_path
+
+    appcenter_upload(
+      api_token: appcenter_api_token,
+      owner_name: "Flixxo",
+      app_name: "Flixxo-android",
+      apk: Actions.lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH] 
+    )
+  end
+
+  desc "Deploy a new pro version to the AppCenter"
+  lane :deploy_pro_appcenter do
+
+    ##run git status clean if not executing lane in CI
+    ensure_git_status_clean  if !is_ci?
+
+    appcenter_api_token = ENV['APPCENTER_API_TOKEN_TEST']
+    
+    raise "You must specify a APPCENTER_API_TOKEN_TEST environment variable to deploy." if appcenter_api_token.nil?
+
+    if !is_ci?
+      gradle(task: "incrementVersionCode", project_dir: './')
+    end 
+
+    properties = {
+      "android.injected.signing.store.file" => "keystore.jks",
+      "android.injected.signing.store.password" => ENV['STORE_PASSWORD'],
+      "android.injected.signing.key.alias" => ENV['KEY_ALIAS'],
+      "android.injected.signing.key.password" => ENV['KEY_PASSWORD'],
+    }
+    
+    gradle(task: 'assemble', build_type: 'Pro', properties: properties)
+
+    if !is_ci?
+      git_commit(path: ['./gradle.properties'], message: 'Bump versionCode')
+      push_to_git_remote
+    end
+    
+    apk_path = Actions.lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH] 
+    puts apk_path
+
+    appcenter_upload(
+      api_token: appcenter_api_token,
+      owner_name: "Flixxo",
+      app_name: "Flixxo-android",
+      apk: Actions.lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH] 
+    )
+  end
+
+end

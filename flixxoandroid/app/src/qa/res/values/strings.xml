@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flixxo(QA)</string>
+    <string name="file_provider_authority" translatable="false">com.flixxo.apps.flixxoapp.qa.fileprovider</string>
+</resources>

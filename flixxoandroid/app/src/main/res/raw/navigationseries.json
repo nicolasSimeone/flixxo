@@ -1,0 +1,114 @@
+[
+  {
+    "name":"1.mp4",
+    "nextEpisodeRight":"2.mp4",
+    "nextEpisodeLeft":"3.mp4",
+    "episodeUrl": "http://localhost/video/1.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"2.mp4",
+    "nextEpisodeRight":"4.mp4",
+    "nextEpisodeLeft":"5.mp4",
+    "episodeUrl": "http://localhost/video/2.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"3.mp4",
+    "nextEpisodeRight":"4.mp4",
+    "nextEpisodeLeft":"5.mp4",
+    "episodeUrl": "http://localhost/video/3.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"4.mp4",
+    "nextEpisodeRight":"5.mp4",
+    "nextEpisodeLeft":null,
+    "episodeUrl": "http://localhost/video/4.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"5.mp4",
+    "nextEpisodeRight":"7.mp4",
+    "nextEpisodeLeft":"6.mp4",
+    "episodeUrl": "http://localhost/video/5.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"6.mp4",
+    "nextEpisodeRight":null,
+    "nextEpisodeLeft":"7.mp4",
+    "episodeUrl": "http://localhost/video/6.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"7.mp4",
+    "nextEpisodeRight":"8.mp4",
+    "nextEpisodeLeft":"9.mp4",
+    "episodeUrl": "http://localhost/video/7.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"8.mp4",
+    "nextEpisodeRight":"9.mp4",
+    "nextEpisodeLeft":"10.mp4",
+    "episodeUrl": "http://localhost/video/8.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"9.mp4",
+    "nextEpisodeRight":"8.mp4",
+    "nextEpisodeLeft":"10.mp4",
+    "episodeUrl": "http://localhost/video/9.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"10.mp4",
+    "nextEpisodeRight":"11.mp4",
+    "nextEpisodeLeft":"12.mp4",
+    "episodeUrl": "http://localhost/video/10.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"11.mp4",
+    "nextEpisodeRight":"12.mp4",
+    "nextEpisodeLeft":null,
+    "episodeUrl": "http://localhost/video/11.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"12.mp4",
+    "nextEpisodeRight":"13.mp4",
+    "nextEpisodeLeft":"14.mp4",
+    "episodeUrl": "http://localhost/video/12.mp4",
+    "showAt":20,
+    "default":"loop"
+  },
+  {
+    "name":"13.mp4",
+    "nextEpisodeRight":"14.mp4",
+    "nextEpisodeLeft":null,
+    "episodeUrl": "http://localhost/video/13.mp4",
+    "showAt":20,
+    "default":"end"
+  },
+  {
+    "name":"14.mp4",
+    "nextEpisodeRight":"13.mp4",
+    "nextEpisodeLeft":null,
+    "episodeUrl": "http://localhost/video/14.mp4",
+    "showAt":20,
+    "default":"end"
+  }
+]

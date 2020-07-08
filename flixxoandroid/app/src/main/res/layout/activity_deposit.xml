@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/flixxoBackgorundColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.flixxo.apps.flixxoapp.view.DepositFragment">
+
+        <LinearLayout
+                android:id="@+id/warning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/shape_followers"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="20dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/icon_warning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="7dp"
+                        android:src="@drawable/ic_attention_icon"/>
+
+                <TextView
+                        android:id="@+id/warning_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/warning"
+                        android:textColor="@color/attention"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/warning_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:text="@string/warning_info"/>
+
+        </LinearLayout>
+
+        <View
+                android:foregroundGravity="center"
+                android:layout_width="match_parent"
+                android:background="@color/followers"
+                android:layout_height="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@+id/warning"
+                android:layout_margin="20dp"
+                android:id="@+id/view">
+        </View>
+
+        <LinearLayout
+                android:id="@+id/layout_address_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/warning"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+            <TextView
+                    android:id="@+id/address"
+                    android:text="@string/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_semibold"/>
+
+            <TextView
+                    android:id="@+id/use_this"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/use_this_address"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_regular"/>
+
+            <TextView
+                    android:id="@+id/token"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:maxLines="1"
+                    android:backgroundTint="@color/flixxoAppColor"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textIsSelectable="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"/>
+
+            <Button
+                    android:id="@+id/copy_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="@string/copy"
+                    android:fontFamily="@font/montserrat_bold"
+                    style="@style/button_style"
+                    android:layout_marginTop="15dp"/>
+
+            <View
+                    android:foregroundGravity="center"
+                    android:layout_width="match_parent"
+                    android:background="@color/followers"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp">
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/layout_address_container"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="20dp">
+
+            <TextView
+                    android:id="@+id/tv_qr_code"
+                    android:text="@string/qr_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_semibold"/>
+
+            <ImageView
+                    android:id="@+id/image_qr"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center_horizontal" android:contentDescription="TODO"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

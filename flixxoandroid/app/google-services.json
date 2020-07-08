@@ -1,0 +1,227 @@
+{
+  "project_info": {
+    "project_number": "120348324884",
+    "firebase_url": "https://flixxo-8b76c.firebaseio.com",
+    "project_id": "flixxo-8b76c",
+    "storage_bucket": "flixxo-8b76c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120348324884:android:e4800726c81a49c2",
+        "android_client_info": {
+          "package_name": "com.flixxo.apps.flixxoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYPguS8czIvZcQzHwi-wGH5h6OZCeq_cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "120348324884-e7uo0hpqlnpcs50hhc495mf3vmhlqv78.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flixxo.apps.ios.flixxo-app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120348324884:android:aa6846c7d935459a",
+        "android_client_info": {
+          "package_name": "com.flixxo.apps.flixxoapp.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYPguS8czIvZcQzHwi-wGH5h6OZCeq_cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "120348324884-e7uo0hpqlnpcs50hhc495mf3vmhlqv78.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flixxo.apps.ios.flixxo-app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120348324884:android:35ea3c4259b1f2eb",
+        "android_client_info": {
+          "package_name": "com.flixxo.apps.flixxoapp.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYPguS8czIvZcQzHwi-wGH5h6OZCeq_cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "120348324884-e7uo0hpqlnpcs50hhc495mf3vmhlqv78.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flixxo.apps.ios.flixxo-app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120348324884:android:a85f08ca554ec51b",
+        "android_client_info": {
+          "package_name": "com.flixxo.apps.flixxoapp.pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYPguS8czIvZcQzHwi-wGH5h6OZCeq_cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "120348324884-e7uo0hpqlnpcs50hhc495mf3vmhlqv78.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flixxo.apps.ios.flixxo-app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120348324884:android:d128c1d34b55774a",
+        "android_client_info": {
+          "package_name": "com.flixxo.apps.flixxoapp.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYPguS8czIvZcQzHwi-wGH5h6OZCeq_cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "120348324884-e7uo0hpqlnpcs50hhc495mf3vmhlqv78.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flixxo.apps.ios.flixxo-app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120348324884:android:f7952404f50bebb9",
+        "android_client_info": {
+          "package_name": "com.flixxo.apps.flixxoapp.stg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYPguS8czIvZcQzHwi-wGH5h6OZCeq_cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120348324884-bjs3ebs6ts4gddiq5h00159e75kapu0p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "120348324884-e7uo0hpqlnpcs50hhc495mf3vmhlqv78.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flixxo.apps.ios.flixxo-app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

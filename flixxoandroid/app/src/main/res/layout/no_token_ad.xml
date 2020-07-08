@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/onBoardColor">
+
+
+    <Button
+            android:id="@+id/cancel_ad"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:text="@string/cancel"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/no_token_ad"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/play_video_ad"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="16dp" android:layout_marginEnd="16dp"/>
+
+
+    <TextView
+            android:layout_width="0dp"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:text="@string/don_t_have_any_tokens_yet"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintVertical_chainStyle="spread" android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" android:layout_marginEnd="16dp"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintBottom_toTopOf="@+id/dont_worry"/>
+
+    <TextView android:layout_width="0dp"
+              android:fontFamily="@font/montserrat_regular"
+              android:textColor="@android:color/white"
+              android:text="@string/earnflixxads"
+              android:layout_height="wrap_content"
+              android:textSize="18sp"
+              android:id="@+id/dont_worry"
+              app:layout_constraintTop_toBottomOf="@+id/textView"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
+              android:layout_marginEnd="16dp" android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
+              app:layout_constraintBottom_toTopOf="@+id/get_token"/>
+
+
+    <LinearLayout android:layout_width="0dp"
+                  android:fontFamily="@font/montserrat_regular"
+                  android:textColor="@android:color/white"
+                  android:layout_height="25dp"
+                  android:textSize="18sp"
+                  android:id="@+id/get_token"
+                  app:layout_constraintTop_toBottomOf="@+id/dont_worry"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginEnd="16dp" android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toTopOf="@+id/play_video_ad">
+
+        <TextView android:layout_width="wrap_content"
+                  android:fontFamily="@font/montserrat_regular"
+                  android:textColor="@android:color/white"
+                  android:layout_height="match_parent"
+                  android:textSize="18sp"
+                  android:text="@string/get"
+                  android:textAlignment="center"
+                  android:id="@+id/get"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:fontFamily="@font/montserrat_bold"
+                  android:textColor="@android:color/white"
+                  android:layout_marginStart="3dp"
+                  android:layout_height="match_parent"
+                  android:textSize="18sp"
+                  android:textAlignment="center"
+                  android:id="@+id/price_add"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:fontFamily="@font/montserrat_regular"
+                  android:textColor="@android:color/white"
+                  android:layout_height="match_parent"
+                  android:layout_marginStart="3dp"
+                  android:textSize="18sp"
+                  android:text="@string/withourvideo"
+                  android:textAlignment="center"
+                  android:id="@+id/with_our_video"/>
+
+
+    </LinearLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="0dp"
+            android:id="@+id/play_video_ad"
+            app:lottie_rawRes="@raw/ads"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:layout_constraintTop_toBottomOf="@+id/get_token"
+            app:layout_constraintBottom_toTopOf="@+id/cancel_ad"
+            android:layout_height="188dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintVertical_bias="0.19"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

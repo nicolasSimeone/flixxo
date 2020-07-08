@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_view"
+        android:background="@color/eggplant">
+
+
+    <RelativeLayout
+            android:id="@+id/relative_detail"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <com.flixxo.apps.flixxoapp.view.CustomToolbarView
+                android:id="@+id/toolbar_header_detail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="205dp"
+                   android:scaleType="fitXY"
+                   android:layout_marginTop="55dp"
+                   android:id="@+id/detail_image_video"/>
+
+        <View android:layout_width="match_parent"
+              android:id="@+id/gradient"
+              android:layout_height="85dp"
+              android:background="@drawable/gradient_detail" android:layout_alignTop="@+id/detail_image_video"
+              android:layout_marginTop="120dp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/flixxoBackgorundColor"
+                android:layout_marginTop="311dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/start_again"
+                    android:text="@string/start_again"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"/>
+
+            <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabNavDetail"
+                    android:background="#070517"
+                    android:layout_width="match_parent"
+
+                    app:tabIndicatorColor="@color/flixxoYellow"
+                    app:tabTextColor="@color/textColorTabs"
+                    app:tabSelectedTextColor="@android:color/white"
+                    android:layout_height="48dp"
+                    app:tabMode="fixed"
+                    app:tabGravity="fill"
+                    app:tabTextAppearance="@style/tab_text"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabMinWidth="120dp">
+
+                <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tabInformation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/information"/>
+
+                <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tabEpisodes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/episodes"/>
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:background="@color/flixxoBackgorundColor"
+                    android:layout_height="0dp"/>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_nav_detail"
+                    android:layout_width="match_parent"
+                    android:background="@color/dark"
+                    app:itemIconTint="@color/dark_bottombar"
+                    android:layout_weight="0"
+                    android:layout_height="63sp"
+                    android:visibility="visible"
+                    app:labelVisibilityMode="unlabeled"
+                    android:layout_gravity="bottom|end"
+                    app:menu="@menu/bottom_nav"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_height="44dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="263dp"
+                android:id="@+id/pill_gone"
+                android:visibility="visible"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/pill_flixxo_coin"
+                android:elevation="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_anchorGravity="bottom|start">
+
+            <androidx.cardview.widget.CardView android:layout_width="44dp"
+                                               android:backgroundTint="@color/grennConfirm"
+                                               app:cardCornerRadius="22dp"
+                                               android:id="@+id/card_tick"
+                                               android:visibility="gone"
+                                               android:layout_centerInParent="true"
+                                               android:layout_height="match_parent">
+
+                <ImageView
+                        android:id="@+id/cheked_paid"
+                        android:layout_width="20dp"
+                        android:layout_gravity="center"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_tick_simple"
+                        android:elevation="5dp"
+                        android:visibility="visible"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ProgressBar android:layout_width="match_parent"
+                         android:id="@+id/progress_watch"
+                         android:indeterminateTint="@android:color/white"
+                         android:visibility="visible"
+                         android:layout_centerHorizontal="true"
+                         android:layout_height="25dp" android:layout_marginTop="10dp"
+                         android:layout_marginBottom="10dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginStart="10dp"
+                         android:layout_marginEnd="10dp"
+                         android:layout_marginRight="10dp"/>
+
+
+            <LinearLayout
+                    android:id="@+id/pill_container"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_anchorGravity="bottom|start" android:layout_centerVertical="true">
+
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:orientation="horizontal"
+                              android:id="@+id/pill_container_item"
+                              android:layout_height="44dp"
+                              android:paddingEnd="10dp">
+
+                    <ImageView android:layout_width="30dp"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/flixxo_image_price"
+                               android:src="@drawable/icon_flixx_white"
+                               android:layout_gravity="center"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/detail_price"
+                              android:fontFamily="@font/montserrat_bold"
+                              android:textSize="15sp"
+                              android:text="1.00"
+                              android:layout_gravity="center"
+                              android:textAlignment="center"
+                              android:textColor="@android:color/white"
+                              android:textStyle="bold"/>
+
+                    <View
+                            android:id="@+id/separate"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@android:color/white"
+                            android:alpha="0.5"/>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                        android:id="@+id/watch_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:paddingLeft="3dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/watchNow"/>
+
+                <TextView
+                        android:id="@+id/pay_to_watch"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:paddingEnd="10dp"
+                        android:gravity="center"
+                        android:elevation="5dp"
+                        android:textSize="15sp"
+                        android:visibility="gone"
+                        android:textColor="@android:color/white"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="44dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="263dp"
+                android:id="@+id/pill_next_ep_gone"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/pill_flixxo_coin"
+                android:elevation="5dp"
+                android:visibility="invisible"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                app:layout_anchorGravity="bottom|start">
+
+            <androidx.cardview.widget.CardView android:layout_width="44dp"
+                                               android:backgroundTint="@color/grennConfirm"
+                                               app:cardCornerRadius="22dp"
+                                               android:id="@+id/card_tick_next_ep"
+                                               android:visibility="gone"
+                                               android:layout_centerInParent="true"
+                                               android:layout_height="match_parent">
+
+                <ImageView
+                        android:id="@+id/check_next_ep"
+                        android:layout_width="20dp"
+                        android:layout_gravity="center"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_tick_simple"
+                        android:elevation="5dp"
+                        android:visibility="visible"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                    android:id="@+id/next_ep_container"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_anchorGravity="bottom|start"
+            >
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="44dp"
+                          android:id="@+id/detail_episode"
+                          android:fontFamily="@font/montserrat_bold"
+                          android:textSize="15sp"
+                          android:gravity="center"
+                          android:textAlignment="center"
+                          android:textColor="@android:color/white"
+                          android:textStyle="bold"/>
+
+
+                <TextView
+                        android:id="@+id/pay_to_watch_next_ep"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center"
+                        android:elevation="5dp"
+                        android:textSize="15sp"
+                        android:visibility="gone"
+                        android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <com.flixxo.apps.flixxoapp.view.NoConnectionView
+            android:id="@+id/no_internet_detail"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </com.flixxo.apps.flixxoapp.view.NoConnectionView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

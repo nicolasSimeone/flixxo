@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/flixxoBackgorundColor"
+        tools:context="com.flixxo.apps.flixxoapp.view.TorrentStreamingActivity">
+
+    <ImageView
+            android:id="@+id/cancel_loader"
+            android:layout_width="25dp"
+            android:background="@drawable/ic_close_circle"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:alpha="0.7"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="25dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationLoader"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loader"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.498"/>
+
+    <TextView
+            android:id="@+id/flixxo_facts"
+            android:text="#FlixxoFacts"
+            android:textColor="@color/flixxoYellow"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/random_quote"
+            app:layout_constraintStart_toEndOf="@+id/animationLoader"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.958"/>
+
+    <TextView
+            android:id="@+id/random_quote"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/animationLoader"
+            android:textSize="18sp"
+            android:maxLines="3"
+            android:minLines="3"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="0dp"
+            android:textColor="@color/gray_loading"
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/random_quote"
+            app:layout_constraintStart_toEndOf="@+id/animationLoader"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.224"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

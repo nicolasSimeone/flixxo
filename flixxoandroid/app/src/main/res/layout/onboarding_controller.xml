@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/onBoardColor"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:weightSum="100"
+                  android:layout_margin="15dp"
+                  android:layout_height="5dp">
+
+        <View
+                android:background="@drawable/onboarding_controller_view_pressed"
+                android:id="@+id/step1"
+                android:layout_width="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="25"
+                android:layout_height="match_parent"/>
+
+        <View
+                android:background="@drawable/onboarding_controler_view_unpressed"
+                android:id="@+id/step2"
+                android:layout_marginEnd="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:layout_height="match_parent"/>
+
+        <View
+                android:background="@drawable/onboarding_controler_view_unpressed"
+                android:id="@+id/step3"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        <View
+                android:background="@drawable/onboarding_controler_view_unpressed"
+                android:id="@+id/step4"
+                android:layout_weight="25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:id="@+id/fragment_steps_layout"
+                 android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/settingsFragment"
+            android:id="@+id/settings">
+
+    <fragment
+            android:id="@+id/settingsFragment"
+            android:label="Settings"
+            android:name="com.flixxo.apps.flixxoapp.view.ProfileFragment"
+            tools:layout="@layout/profile_fragment">
+        <action android:id="@+id/action_settingsFragment_to_accountFragment2"
+                app:destination="@id/accountFragment"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_out"
+                app:popExitAnim="@anim/fade_in"/>
+        <action android:id="@+id/action_settingsFragment_to_editProfileFragment"
+                app:destination="@id/editProfileFragment"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"/>
+        <action android:id="@+id/action_settingsFragment_to_depositFragment"
+                app:destination="@id/depositFragment"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"/>
+        <action android:id="@+id/action_settingsFragment_to_followFragment" app:destination="@+id/followFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/accountFragment"
+              android:name="com.flixxo.apps.flixxoapp.view.AccountFragment"
+              android:label="@string/account"/>
+
+    <fragment android:id="@+id/editProfileFragment"
+              android:name="com.flixxo.apps.flixxoapp.view.EditProfileFragment"
+              android:label="@string/edit_profile"/>
+
+    <fragment android:id="@+id/depositFragment"
+              android:name="com.flixxo.apps.flixxoapp.view.DepositFragment"
+              android:label="@string/deposit"/>
+
+    <fragment android:id="@+id/followFragment"
+              android:name="com.flixxo.apps.flixxoapp.view.FollowFragment"
+              android:label="@string/follow">
+        <argument
+                android:name="FollowList"
+                app:argType="com.flixxo.apps.flixxoapp.model.FollowState"
+        />
+        <action android:id="@+id/action_followFragment_to_userProfileFragment"
+                app:destination="@id/userProfileFragment"/>
+    </fragment>
+    <fragment android:id="@+id/userProfileFragment" android:name="com.flixxo.apps.flixxoapp.view.UserProfileFragment"
+              android:label="@string/profile">
+        <argument
+                android:name="Author"
+                app:argType="string"
+                android:defaultValue=" "
+        />
+        <argument
+                android:name="Avatar"
+                app:argType="string"
+                android:defaultValue=" "
+        />
+        <argument
+                android:name="State"
+                app:argType="boolean"
+                android:defaultValue="false"
+        />
+        <argument
+                android:name="ID"
+                app:argType="string"
+                android:defaultValue=" "
+        />
+
+    </fragment>
+
+</navigation>

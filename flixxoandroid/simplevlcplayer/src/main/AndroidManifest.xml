@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.masterwok.simplevlcplayer">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+
+    <application>
+        <activity
+            android:name=".activities.MediaPlayerActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout"
+            android:label="@string/title_activity_media_player"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.FullScreen">
+        </activity>
+
+        <!-- Register a media button receiver so intents are sent to the media player service. -->
+        <!--<receiver android:name="androidx.media.session.MediaButtonReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MEDIA_BUTTON"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <service
+            android:name=".services.MediaPlayerService"
+            android:stopWithTask="true">
+            <intent-filter>
+                <!-- Accept media button events through onStartCommand(..) -->
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
